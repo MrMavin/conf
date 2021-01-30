@@ -16,7 +16,7 @@ crontab -l > $TEMP_FILE
 
 # TODO check crontab doesn't already have V4L2 configuration
 
-echo "@reboot $V4L2_CONFIGURE" >> $TEMP_FILE
+echo "@reboot /bin/bash $V4L2_CONFIGURE" >> $TEMP_FILE
 
 crontab $TEMP_FILE
 rm $TEMP_FILE
