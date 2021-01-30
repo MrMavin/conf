@@ -16,3 +16,5 @@ bash $V4L2_CONFIGURE
 
 sudo cp -f $V4L2_SERVICE $V4L2_SYSTEMD_PATH
 sudo sed -i "s+:script+$V4L2_CONFIGURE+g" $V4L2_SYSTEMD_PATH
+sudo systemctl enable v4l2
+sudo systemctl start v4l2
