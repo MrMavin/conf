@@ -1,4 +1,4 @@
-sudo apt install -y v4l-utils
+#!/bin/bash
 
 v4l2-ctl -c brightness=160,contrast=32,saturation=70,\
 hue=9,white_balance_temperature_auto=0,gamma=120,\
