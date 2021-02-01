@@ -1,0 +1,10 @@
+[Unit]
+Description=Configure Input Sounds
+After=display-manager.service
+
+[Service]
+ExecStart=/bin/bash :script
+ExecReload=/bin/bash :script
+
+[Install]
+WantedBy=multi-user.target
