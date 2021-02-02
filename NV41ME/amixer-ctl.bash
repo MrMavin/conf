@@ -3,7 +3,7 @@
 
 while [ true ]
 do
-  amixer sget "Capture" | grep 32 >> /dev/null || amixer sset "Capture" 32 >> /dev/null
+  amixer sget "Capture" | grep 50 >> /dev/null || amixer sset "Capture" 50 >> /dev/null
 
   AMIXER_MIC_BOOST=$(amixer sget "Mic Boost" | grep "Front")
   AMIXER_DIGITAL=$(amixer sget "Digital" | grep "Front")
